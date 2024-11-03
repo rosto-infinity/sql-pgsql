@@ -37,3 +37,8 @@ CREATE INDEX "IDX_prenom" ON public.etudiants USING BTREE (prenom);
 CREATE UNIQUE INDEX "IDX_mail" ON public.etudiants USING BTREE (mail);
 CREATE INDEX "IDX_id_ue" ON public.etudiants USING BTREE (id_ue);
 
+INSERT INTO public.etudiants( nom, prenom, mail, id_ue)
+	VALUES ('waffo2','lele2','lele2@gmail.com', 4);
+
+	
+	SELECT * FROM public.etudiants;
